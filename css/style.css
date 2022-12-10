@@ -1,0 +1,329 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Bungee+Shade&family=Caveat:wght@400;600&family=Creepster&family=Cutive+Mono&family=Fredericka+the+Great&family=Fuzzy+Bubbles:wght@400;700&family=Henny+Penny&family=Love+Ya+Like+A+Sister&family=Monoton&family=Permanent+Marker&family=Pinyon+Script&family=Quintessential&family=Roboto:wght@100;300&family=Rubik+Dirt&family=Rubik+Distressed&family=Rubik+Maze&family=Rubik+Moonrocks&family=Vast+Shadow&display=swap');
+:root{
+    --Roboto: 'Bungee Inline', cursive;
+    --FuzzyBubbles: 'Bungee Shade', cursive;
+    --Caveat: 'Caveat', cursive;
+    --PermanentMarker: 'Creepster', cursive;
+    --Monoton: 'Cutive Mono', monospace;
+    --CutiveMono: 'Fredericka the Great', cursive;
+    --FrederickatheGreat: 'Fuzzy Bubbles', cursive;
+    --PinyonScript: 'Henny Penny', cursive;
+    --Quintessential: 'Love Ya Like A Sister', cursive;
+    --Creepster: 'Monoton', cursive;
+    --HennyPenny: 'Permanent Marker', cursive;
+    --BungeeInline: 'Pinyon Script', cursive;
+    --RubikDirt: 'Quintessential', cursive;
+    --RubikDistressed: 'Roboto', sans-serif;
+    --RubikMaze: 'Rubik Dirt', cursive;
+    --RubikMoonrocks: 'Rubik Distressed', cursive;
+    --BugeeShade: 'Rubik Maze', cursive;
+    --LoveYaLikeAsister: 'Rubik Moonrocks', cursive;
+    --VastShadow : 'Vast Shadow', cursive;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    line-height: 1.5;
+    font-family:var(--RubikMoonrocks);
+    color:dimgrey;
+}
+
+.container{
+    max-width: 1320px;
+    margin:  0 auto;
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.header{
+    width: 100%;
+    height: 300px;
+    background:white;
+    text-decoration: none;
+}
+
+.navigation{
+
+    cursor: pointer;
+}
+.navbar{
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.logo a{
+    font-family:--LoveYaLikeAsister;
+    font-size: 3rem;
+    text-transform:capitalize;
+    color:black;
+    text-decoration: none;
+   
+    
+}
+.logo b{
+    font-family:--LoveYaLikeAsister;
+    font-size: 3rem;
+    text-transform:capitalize;
+    color:black;
+    
+}
+.navbar_nav a{
+    font-family:--LoveYaLikeAsister;
+    font-size: 1.6rem;  
+    text-transform:capitalize;
+    color:black;
+    margin-left: 5px;
+    margin-right: 5px;
+    letter-spacing: 1px;
+    word-spacing: 1rem;
+    text-decoration: none;
+}
+.navbar_nav a:hover{
+color: dimgray;
+}
+.navbar_nav i{
+    font-size: 1rem;
+    color: black;
+    opacity: 1;
+    transition: 1s;
+}
+.navbar_nav i:hover{
+   color: dimgray;
+}
+.fa-magnifying-glass{
+    font-size: 23px;
+    color:dimgray;
+    transition: linear 0.5s;
+}
+.fa-magnifying-glass:hover{
+    color:black;
+
+}
+
+.banner{
+    padding: 5rem;
+    background-color:#F5F5F5;
+    background-image: url(../img/axit.jpg);
+    background-repeat: no-repeat;
+    background-position:right;
+    background-size: 20%;
+    border-bottom: 2px solid dimgray;
+}
+.banner h1{
+    background-color: black;
+    width: 25%;
+    color: bisque;
+    padding:0.2rem 0.8rem;
+    text-transform: capitalize;
+    font-weight: 100;
+    letter-spacing: 2px;
+    margin-bottom: 1rem;
+    font-size: 35px;
+    font-family: PMingLiU-ExtB;
+}
+.banner span{
+    font-size: 25px;
+    font-family: PMingLiU-ExtB;
+    letter-spacing: 3px;
+    border-top: 2px solid dimgray;
+}
+.blog{
+    padding: 4.8rem;
+    background-color: #F5F5F5;
+}
+.blog__content{
+    display: grid;
+    grid-template-columns: repeat(2,50%);
+    gap: 2.5rem ;
+}
+.blog__title{
+    text-align: center;
+}
+.blog__title{
+    font-size: 2rem;
+    font-family:  PMingLiU-ExtB;
+    letter-spacing: 2px;
+    margin-bottom: 1rem;
+    text-transform: capitalize;
+}
+.blog__title p{
+text-align: left;
+margin-bottom: 1rem;
+letter-spacing: 1px;
+font-size: 18px;
+opacity: 1;
+}
+
+.team{
+    padding: 4.8rem 0;
+    background-color: #fff;
+     }
+    .team__title{
+        text-align: center;
+    }
+    .team__title h2{
+        font-size: 2.5rem;
+        font-family:PMingLiU-ExtB;
+        letter-spacing: 15px;
+        margin-bottom: 1rem;
+        text-transform: capitalize;
+        word-spacing: 10px;
+    }
+    .team__title p{
+        width: 50%;
+        margin-left: 25%;
+        font-family:PMingLiU-ExtB;
+        letter-spacing: 0.5px;
+        font-size: 17px;
+        margin-bottom: 1rem;
+    }
+    .team__content{
+        display: grid;
+       grid-template-columns: repeat(3,1fr);
+       gap: 3rem;
+        
+    }
+    .team__item{
+        cursor: progress;
+    }
+    .team__img{
+        position: relative;
+        overflow: hidden;
+        
+    }
+    .team__img img{
+        transition: 1s;
+        transform: scale(1.5);
+    }
+    .team__img img:hover{
+        transform: scale(1);
+
+    }
+    .team__item.title h3{
+        text-transform: capitalize;
+        margin-top: 0.5rem;
+        font-family: PMingLiU-ExtB;
+    }
+    .team__item.title p{
+        margin-top: 0.5rem;
+        text-align:left;
+        font-size: 18px;
+    } 
+    .web__logo{
+        height: 10vh;
+        background-color: whitesmoke;
+    }
+
+    .web__logo .container h1{
+        color: dimgray;
+        font-size: 3.5rem;  
+        text-transform: uppercase;
+        text-align: center;
+    }
+    .social__media{
+        height: 5vh;
+        background-color:#F5F5F5;
+        text-align: center;
+        padding-top: 0.2rem;
+       }
+       .social__media a{
+        color: #000;
+        margin-left: 30px;
+        margin-right: 30px;
+        font-size:  20px; 
+        transition: color 0.5s;
+       }
+       .social__media a :hover{
+        color: dimgray;
+       }
+       
+    .footer{
+        height: 50px;
+        background-color:black ;
+        display: flex;
+        text-align: center;
+    }   
+    .footer p{
+        color: #fff;
+        margin-top: 15px;
+        font-size: 18px;
+        letter-spacing: 2px;
+    
+    }        
+    .navbar_nav .fa-bars{
+        display: none;  
+    } 
+
+    @media screen and (max-width:768px){
+    
+        .navbar_nav .fa-bars{
+            display:block;
+        
+        }
+        .navbar_nav a{
+            display:none;  
+            
+        }    
+    
+       .navbar_nav .fa-magnifying-glass{
+            display: none;
+        }
+     
+        .banner h1 {
+            width: 80%;
+            font-size: 25px;
+            margin-bottom: 0;
+        }
+        .banner span {
+            font-size: 15px;
+            font-family: PMingLiU-ExtB;
+            letter-spacing: 3px;
+        }
+        
+    
+    .blog__content {
+        display: grid;
+        grid-template-columns:100%;
+        gap: 2.5rem;
+    }
+    .team__title {
+        text-align: center;
+    }
+    .team__title p{
+        width: 100%;
+        margin-left: 0%;
+        text-align: justify;
+    }
+    .team__content {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 3rem;
+       
+    }
+    }
+    
+    
+    
+          
+        
+    
